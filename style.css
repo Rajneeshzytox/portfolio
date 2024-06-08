@@ -1,12 +1,15 @@
 /* imports */
 @import url("https://css.gg/css"); /*css icons*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* all */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     /* border: 0.05rem solid rgba(255, 0, 0, 0.637); */
+    font-family: "Inter", sans-serif; /*im using inter for all over my portfolio site*/
     
 }
 
@@ -15,13 +18,16 @@
     --bg-color:hsl(0,0%,6%);
     --text-color: hsl(0, 0%, 99%);
     --font-size: 1.4rem;
-    --font-family: Arial, Helvetica, sans-serif;
+    --font-family: "Inter", sans-serif;
 
     --padding: 1rem 2rem;
     --border-radius: 7px;
     --bold: 700;
 
     --primary-color: 220, 90%, 50%;
+    --primary-color-light: 220, 90%, 70%;
+    --primary-color-dark: 220, 90%, 20%;
+
     
 }
 
@@ -35,8 +41,14 @@ body{
     font-family: var(--font-family);
     line-height: 1.4;
     letter-spacing: 0.04rem;
-}
     
+}
+
+h1,h2,h3,h4,h5,h6,.section-text{
+    letter-spacing: 0;
+    line-height: 1;
+    font-weight: 600;
+}
 .bg-cover{background-size: cover;background-position: center;background-repeat: no-repeat;}
 
 img{display: block;max-width: 100%;}
@@ -52,6 +64,12 @@ img{display: block;max-width: 100%;}
 .padding{padding: var(--padding);}
 
 .section-text{font-size: clamp(3rem, 6vw, 5rem);}
+
+.special-text{
+    background: linear-gradient(45deg, hsl(var(--primary-color-light)), hsl(var(--primary-color)));
+    background-clip: text;
+    color: transparent;
+}
 
 .uppercase{text-transform: uppercase;}
 .btn{
@@ -74,14 +92,14 @@ section{
 .tag{
     background-color: #444;
     display: inline-flex;
-    gap: 0.5rem;
+    gap: 1rem;
     font-size: 1.1rem;
     padding: 0.5rem 2rem;
     border-radius: var(--border-radius
     );
 }
-i{
-    margin-right: 0.5rem;
+i.with-text{
+    margin-right: 1rem;
 }
 /* ---------------- typography css---------------- */
 li,a,a:active,a:visited{
@@ -253,3 +271,65 @@ position: relative;
     100% {transform: translateX(50vw);
         -webkit-transform: translateX(50vw);}
 }
+
+
+/* ---------------- Projects Categories section css---------------- */
+.projects{
+    min-height: 100vh;
+}
+
+.projects .projects-heading{
+    text-align: center;
+    margin: 10vh;
+    
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem;
+    
+    align-items: stretch;
+    padding: 0 5rem;
+    
+    }
+    
+.card{
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    background: linear-gradient(to bottom, #2b2b2b, var(--bg-color));
+    position: relative;
+    transition: .2s all;
+    border: 2px solid #222;
+}
+
+.card-icon {
+    font-size: 150%;
+}
+.card-icon i{
+    margin: 0;
+}
+.card:hover{
+    scale: 1.05;
+    border: 2px solid hsl(var(--primary-color));
+    box-shadow: 0 0 20px hsl(var(--primary-color-dark));
+}
+.card:hover .card-text a{
+    opacity: 1;
+    pointer-events: all;
+    scale: 1.1;
+    right: 20%;
+}
+
+
+.card .card-icon{
+    aspect-ratio: 1;
+    width: 15%;
+    background-color: #383838;
+    border-radius: 50%;
+
+}
+.card-text{width: 70%;text-transform: capitalize;}
+.card-text h4{font-size: 2rem; line-height: 20px;}
+.card-text p{font-size: 1.2rem; line-height: 20px;}
+.card-text a{position: absolute; right: 30%;rotate: -45deg; bottom: 30%; pointer-events: none; opacity: 0;transition: .4s;}
+
