@@ -363,7 +363,7 @@ position: relative;
     width: 15%;
     background-color: #383838;
     border-radius: 50%;
-
+    font-size: 1.3rem;
 }
 .card-text{width: 70%;text-transform: capitalize;}
 .card-text h4{font-size: 2rem; line-height: 20px;}
@@ -372,11 +372,11 @@ position: relative;
 
 @media screen and (width<786px) {
     .projects .projects-heading{
-        font-size: 5vw;
+        font-size: 6vw;
         margin: 15vh 0;
         }
     .card-grid{
-        border: 1px solid red;
+        
         padding:0 10vw;
     }
 }
