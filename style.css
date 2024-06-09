@@ -139,7 +139,7 @@ header nav ul .nav-logo .logo-img{
 
 .hero{
     min-height: 50rem;
-    
+    position: relative;
     background: linear-gradient( var(--bg-color) 100%,#3a3a3a, #000);
 }
 .hero .hero-text{
@@ -157,6 +157,8 @@ header nav ul .nav-logo .logo-img{
 .hero-svg1{
 position: absolute;
 width: 60%;
+height: 100%;
+left: 0;
 top: 56px;
 pointer-events: none;
 
@@ -165,8 +167,8 @@ pointer-events: none;
     position: absolute;
     
     right: 0;
-    top: -50px;
-    width: 12%;
+    top: 0;
+    width: 25%;
     pointer-events: none;
     
     }
@@ -201,7 +203,23 @@ pointer-events: none;
     }
 }
 
-
+@media screen and (width<786px) {
+    .hero .hero-text p{
+        font-size: 1rem;
+       
+    }
+    .hero{
+        justify-content: center;
+        padding: 0;
+    }
+    .hero-text p{
+       width: 90%;
+        
+    }
+    .hero-svg1{
+        width: 70%;
+    }
+}
 
 
 /* ---------------- Profile card section css---------------- */
@@ -243,9 +261,28 @@ position: relative;
     
 
 }
+@media screen and (width<900px) {
+    .profile{
+        width: 100%;
+        /* background-color: red; */
+    }
+    .profile main{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: 100%;
+        padding: 1rem;
+    }
+    .pfp-text{
+        width: 100%;
+    }
+    .profile main div img{
+        width: 20vw;
+        margin: 3rem 0 0 3rem;
+    }
+}
 
 
-/* ---------------- Profile card section css---------------- */
+/* ---------------- skills section css---------------- */
 .skills{
     min-height: 60px;
     background-color: #000;
@@ -333,3 +370,16 @@ position: relative;
 .card-text p{font-size: 1.2rem; line-height: 20px;}
 .card-text a{position: absolute; right: 30%;rotate: -45deg; bottom: 30%; pointer-events: none; opacity: 0;transition: .4s;}
 
+@media screen and (width<786px) {
+    .projects .projects-heading{
+        font-size: 5vw;
+        margin: 15vh 0;
+        }
+    .card-grid{
+        border: 1px solid red;
+        padding:0 10vw;
+    }
+}
+
+
+/* end */
