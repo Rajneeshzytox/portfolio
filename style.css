@@ -205,7 +205,11 @@ pointer-events: none;
 
 @media screen and (width<786px) {
     .hero .hero-text p{
-        font-size: 1rem;
+        font-size: 1.4rem;
+       
+    }
+    .hero .hero-text h1{
+        font-size: 4rem;
        
     }
     .hero{
@@ -253,7 +257,7 @@ position: relative;
 }
 
 .pfp-text p{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 .profile main div img{
     width: 70%;
@@ -276,9 +280,10 @@ position: relative;
         width: 100%;
     }
     .profile main div img{
-        width: 20vw;
+        width: 100px;
         margin: 3rem 0 0 3rem;
     }
+    
 }
 
 
