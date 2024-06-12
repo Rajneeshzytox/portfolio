@@ -80,11 +80,11 @@ body{
   width: 6px;
   background: linear-gradient(
     to right, 
-    hsl(220, 100%, 72%), 
-    hsl(200, 100%, 69%)
+    hsl(220, 100%, 62%), 
+    hsl(220, 100%, 79%)
   );
   border-radius: 50%;
-  box-shadow: 0 0 0 4px hsl(216, 90%, 54%);
+  box-shadow: 0 0 0 4px hsl(216, 33%, 39%);
 }
 
 .timeline-text {
