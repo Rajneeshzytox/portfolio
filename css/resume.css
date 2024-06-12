@@ -68,7 +68,7 @@ body{
   left: -30px;
   width: 1px;
   height: calc(100% + 50px);
-  background: hsl(220, 91%, 41%);
+  background: hsl(220, 98%, 53%);
 }
 
 .timeline-item::after {
@@ -81,10 +81,10 @@ body{
   background: linear-gradient(
     to right, 
     hsl(220, 100%, 72%), 
-    hsl(260, 100%, 68%)
+    hsl(200, 100%, 69%)
   );
   border-radius: 50%;
-  box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
+  box-shadow: 0 0 0 4px hsl(216, 90%, 54%);
 }
 
 .timeline-text {
@@ -144,7 +144,7 @@ body{
 }
 
 .skill-progress-bg {
-  background: hsl(0, 0%, 22%);
+  background: hsl(229, 100%, 90%);
   width: 100%;
   height: 8px;
   border-radius: 10px;
