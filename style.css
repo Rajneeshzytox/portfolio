@@ -204,6 +204,7 @@ div.activeNavBtn .bar3{
 
 @media screen and (width<=650px) {
    .nav-option-btn{display: flex; justify-content: flex-end;}
+
     .nav-items{
        position: absolute;
        top: 0;
@@ -229,9 +230,17 @@ div.activeNavBtn .bar3{
         opacity: 1;
         transform: translate(0%, 0%);
         height: 100vh;
+        pointer-events: all;
+        
+        user-select: auto;
     }
     .nav-items li{
         margin: 1rem 0;
+    }
+
+    /* hiding text logo for smaller screen*/
+    .nav-logo a{
+        display: none;
     }
 }
             
