@@ -159,11 +159,11 @@ header nav{
 .bar1{
     animation: move-up 2s linear infinite alternate;
    opacity: 0.7;
-   width: 50%;
+   width: 60%;
 }
 .bar2{
     animation: move-down 2s linear infinite alternate;
-    width: 50%;
+    width: 60%;
     opacity: 0.7;
 }
 
@@ -203,7 +203,7 @@ div.activeNavBtn .bar3{
 
 
 @media screen and (width<=650px) {
-   .nav-option-btn{display: block;}
+   .nav-option-btn{display: flex; justify-content: flex-end;}
     .nav-items{
        position: absolute;
        top: 0;
